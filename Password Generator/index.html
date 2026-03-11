@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+</head>
+<body>
+    <div class="container">
+        
+        <h1>Password Generator</h1>
+        <!-- <input class="ip"> -->
+         <div class="password-container">
+            <input type="text" readonly id="password">
+            <i class="far fa-copy" id="copy-btn" title="Copy to clipboard"></i>
+         </div>
+         <!-- <p class="ip"></p> -->
+        <div class="box">   
+            <div class="Password-length">
+                <label for="length">Password Length</label>
+                <input type="range" id="length" min="6" max="30">
+                <p id="len">12</p>
+            </div>
+            <div class="cl">
+                <label for="uppercase">Include Uppercase</label>
+                <input type="checkbox" id="uppercase">
+            </div>
+            <div class="cl">
+                <label for="lowercase">Include Lowercase</label>
+                <input type="checkbox" id="lowercase">
+            </div>
+            <div class="cl">
+                <label for="numbers">Include Numbers</label>
+                <input type="checkbox" id="numbers">
+            </div>
+            <div class="cl">
+                <label for="symbols">Include Symbols</label>
+                <input type="checkbox" id="symbols">
+            </div>
+        </div>
+        <button type="submit" class="btn">Generate Password</button>
+        <div class="strength">
+            <small>Password Strength:</small>
+            <small id="txt">Strong</small>
+        </div>
+        <div class="bar">
+            <!--adjust the color of this div bar-->
+            <div class="meter">
+                <!--adjust this-->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
